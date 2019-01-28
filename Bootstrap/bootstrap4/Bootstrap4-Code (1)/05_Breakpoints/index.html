@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Breakpoints</title>
+</head>
+<!-- 
+<body>
+    <div class="container text-center">
+        <h1 class="display-3">Breakpoints</h1>
+        <button class="btn btn-warning p-sm-5 p-md-0 p-lg-5 p-xl-0">BUTTON</button>
+        <button class="btn btn-danger p-0 p-sm-2 p-md-3 p-lg-4 p-xl-5">BUTTON</button>
+        <button class="btn btn-success p-0 pl-sm-5 pt-md-5 pr-lg-5 pb-xl-5">BUTTON</button>
+        
+        <h1>Margin Example</h1>
+        <button class="btn btn-primary p-4 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">Hi</button>
+        <button class="btn btn-primary p-4 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">Hi</button>
+        <button class="btn btn-primary p-4 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">Hi</button>
+        <button class="btn btn-primary p-4 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">Hi</button>
+    </div> -->
+
+<div class="container text-center">
+    <h1 class="display-3 text-center"> Breakpoints</h1>
+    <button class="btn btn-warning p-md-3 p-sm-5">BUTTOn</button>
+    <!-- since there is no extra small padding that is why we re setting p-0 so it wont apply padding when the screen size changes to small. if we dont apply the other paddings p-0 will add no padding to the button in any size.  -->
+    <button class="btn btn-danger p-0 p-sm-2 p-md-3 p-lg-4 p-xl-5">button2</button>
+    <!-- //the padding is being apllied when the screen size chnages  to sm and up, it will add a padding to the left of 5. and
+    when the screen size changes to medium and up size it will add a padding to the top of 5. -->
+    <button class="btn btn-success p-0 pl-sm-5 pt-md-5 pr-lg-5 pb-xl-5"> button 3</button>
+
+
+<!-- margins -->
+<h1> Margin example </h1>
+<!-- //pading are set to 4 for all buttons spread them on larger sizes and make 
+them cloaser when the size chnages to small.\
+we gave the container text center property so it can center everything 
+when the screen size chnages to small the magin in the x axis ( left and right sides only ) will have a margin of 2
+the same goes for the other, but for the small extra small size it wont have any margin becasue we have set mx-0 which sets margin to the x axis to 0. if we wanted to margin to be 2 in extra small screen size for example we can set mx to 2 (mx-2). --> 
+
+<button class="btn btn-primary p-4 mx-xl-5 mx-lg-4 mx-md-3 mx-sm-2 mx-0">HI</button>
+<button class="btn btn-primary p-4 mx-xl-5 mx-lg-4 mx-md-3 mx-sm-2 mx-0">HI</button>
+<button class="btn btn-primary p-4 mx-xl-5 mx-lg-4 mx-md-3 mx-sm-2 mx-0">HI</button>
+<button class="btn btn-primary p-4 mx-xl-5 mx-lg-4 mx-md-3 mx-sm-2 mx-0">HI</button>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

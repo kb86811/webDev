@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- 
+		document.querySelector("h1").textContent="CHANGES THE TITILE OF TH PAGE";
+//basically replaces the whole body into goodbye! with h1.
+document.body.innerHTML="<h1> Goodbye!</h1>"
+"<h1> Goodbye!</h1>"
+	 -->
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<style> 
+	.big{
+		font-size: 100px;
+		color:orange;
+		border: 5px solid red;
+	}
+	</style>
+</head>
+<body>
+	<h1>Welcome to MY DOM Demo</h1>
+	<p>I dare you to mouse over me</p>
+	<p>Corgi mixes are <strong>super</strong> adorable</p>
+	<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+
+	<ul>
+		<li>orchids</li>
+		<li>Succulents</li>
+		<li>Tulips </li>
+
+	</ul>
+	<img src="https://barrelhorseworld.com/dogs/images/1145556d.jpg">
+	<img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/corgi-mix-cross-breeds-18-591c39272d49f__605.jpg">
+</body>
+<script>
+	var h1=document.querySelector("h1");
+	h1.addEventListener("click",function(){
+		h1.style.background="gray";
+		alert("h1 was cliked!")
+	});
+	// every time we clicked anywhere in the three list it will output the message to the console
+	document.querySelector("ul").addEventListener("click",function(){
+		console.log("YOU CLIKED THE UL!");
+	});
+	
+	//lis will hold  a list of all the li tags separted by commas
+	var lis=document.querySelectorAll("li");
+	//here for all li elements we are creating event lisgtener.
+	for(var i=0;i<lis.length;i++){
+		lis[i].addEventListener("click",function(){
+		this.style.color="pink";
+		});
+	}
+
+// in the below code whenever we have set upp two evenlistener that chnages the text, whenever we hove over it and we move way from the pragagrpaph
+	var paragraph = document.querySelector("p");
+
+//SETUP MOUSE OVER LISTENER
+paragraph.addEventListener("mouseover", function() {
+  paragraph.textContent = "Stop hovering over me!";
+});
+
+//SETUP MOUSE OUT LISTENER
+paragraph.addEventListener("mouseout", function() {
+  paragraph.textContent = "Phew, thank you for leaving me alone";
+});
+
+
+
+
+</script>
+</html>

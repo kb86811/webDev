@@ -1,0 +1,33 @@
+/* sets all the paragraphs font to the specified */
+p{
+    /* font-size: 20px; */
+    /* font-family: 'Marck Script', cursive; */
+    font-family: 'PT Serif', serif;
+
+    font-size: 2.0em;
+    /* font-family: 'Courier New'; */
+    margin : .2in;
+    font-weight: bold;
+    /* line space  */
+    line-height: 2;
+    /* text-align: justify-all; */
+    text-align: justify;
+    /* text decoration */
+    text-decoration: 
+   
+}
+body{
+    font-size: 10px;
+}
+
+h1{
+    font-size: 5.0em;
+    text-align: center;
+    text-decoration: 
+}
+/* // this span is applied inside of a pragraph and it doubles whatever is the ise of the pragraph is. which is 2.0em this em 
+is applied in relation to parent of the element. */
+span{
+
+font-size: 2.0em;
+}

@@ -1,0 +1,22 @@
+h1{
+	color:red;
+	/* border-width: .1cm;
+	border-style: solid;
+	border: .1cm dashed purple; */
+	border: .1cm solid purple
+}
+li{
+	color:rgb(104, 224, 30);
+}
+h4{
+	color:yellow;
+	/* background: rgb(179, 161, 25); */
+}
+body{
+	/* background: blue; */
+	 background: url(http://www.holidayscalendar.com/wp-content/uploads/2016/12/Ramadan_ss_558780571-790x400.jpg);
+
+	  background-repeat: no-repeat;
+	 background-size: cover;
+
+}

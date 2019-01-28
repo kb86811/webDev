@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var movies=[
+    {title: "in Bruges",
+     haswated:false,
+     rating:5},
+    {title: "frozen",
+     haswated:false,
+     rating: 4.5}]
+
+     function buildString(movie){
+var result= "you have "
+	if(movie.haswated){
+		result+="watched";}
+	else{
+		result+= "not seen ";}
+	result+="\"" + movie.title + "\"-";
+	result+= movie.rating + " stars";
+return result;
+}
+// call the above funcntion on each object
+movies.forEach(function(movie){
+    console.log(buildString(movie));
+});
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* this is element selector */
+li {
+	border: 2px solid red;
+}
+
+/* this is an id selector */
+#special{
+	background: yellow;
+}
+ /* this is a class selector */
+.completed {
+	text-decoration: line-through;
+}

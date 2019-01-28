@@ -1,0 +1,21 @@
+div{
+   border: 2px solid blue;
+   /* this sets the width of the paragraphs to 50px  */
+   width:67%;
+   /* this padding APPLYS TO the whole box */
+   padding:30px;
+   padding-left: 20px;
+padding-top: .1in;
+/* this sets the margins for ech parapgraph elmement to be the speicified 
+amount in all sides  */
+/* margin:2in; */
+/* this sets the margin to be .5 in on the bottom side only  */
+/* margin-bottom: .5in; */
+/* // to set all four margins at one time  */
+/* margin: .1in .2in .1in .2in; */
+/* // to autmatically adjust margins sets the left and right to auto   */
+/* margin: 0 auto 0 auto; */
+/* //this is a a quick way to set the top and bottom margin 0 and the left and 
+right to auto */
+margin: auto auto auto 0;
+}

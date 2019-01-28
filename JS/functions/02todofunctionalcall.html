@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <script>
+        //this gives the html a half second to load before the script runs
+        window.setTimeout(function () {
+            // console.log("Connected");
+            var todos = ["eat","read","play"];
+            var input = prompt("what would you like to do?");
+            while (input !== "4") {
+                //add todos
+                if (input === "1") {
+                    addtodo();
+                }
+                //print todos
+                else if (input === "2") {
+                    printTodo();
+                } 
+                //delete to todos
+                else if (input ==="3") {
+                    deleteTodo();
+                }
+                //ask agaiin for new input
+                var input = prompt("what would you like to do?");
+            }
+            console.log("Goodbye!!!")
+
+
+            function addtodo(){
+                var newtodo = prompt("enter new todo");
+                    todos.push(newtodo);
+                    console.log("Added Todo");
+            }
+            function printTodo(){
+                console.log("************")
+                    todos.forEach(function (todo,index) {
+                        console.log(index + ": " + todo);
+                    });
+                    console.log("************")
+
+            }
+            function deleteTodo(){
+                 // ask for index and  delete that to do from the todo list
+                 var index = prompt("enter index to delete ")
+                    // note you don't have to convert the index provided into number js will automatocally does that
+                    todos.splice(index,1);
+                    console.log("DELETED Todo");
+            }
+            // var colors = ["red", "orange","yellow", "green"];
+
+            // todos.forEach(function(todo){
+            //   console.log(todo);
+            // });
+
+            // function printer(each_todos) {
+            //     console.log(each_todos);
+            // }
+            // the same as the above foreach statement function but the we are calling a function declared in different place to print the items to the console.
+            // basically it will pass each items in the todos array to the printer function above
+            // todos.forEach(printer)
+            // console.log("GOODBYE!")
+            // using while loop to iterate over our todos
+            // var count = 0;
+            // while (count < todos.length) {
+            //     console.log(todos[count]);
+            //     count++;
+            // }
+        }, 500);
+    </script>
+</head>
+
+<body>
+    <h1> To do LIst</h1>
+    <ul>
+        <li> "1" Add a Todo</li>
+        <li> "2" - View All todos</li>
+        <li>"3" remove specific Todo</li>
+        <li> "4" Quit Apps</li>
+    </ul>
+</body>
+
+</html>

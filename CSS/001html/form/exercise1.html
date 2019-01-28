@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<h1>Register</h1>
+	<form  action="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page" method="GET">
+
+		<label for="name"> First Name:</label>
+		<input id ="name" type="text" name="" placeholder="John" required>
+		<label for "last">Last Name:</label>
+		<input id = "last" type="text" name="" placeholder="Smith" required>
+	
+	<div>
+		<label>Male</label>
+		<input type="radio" name="gender">
+		<label>Female</label>
+		<input type="radio" name="gender">
+		<label>Other</label>
+		<input type="radio" name="gender">
+	</div>
+	<div>
+	<label for=email>Email:
+	<input id =Email type="email" name="" placeholder="your Email" required="">
+</label>
+	<label for=pass >Password:</label>
+	<input id =pass type="Password" name="" required title="password must be between 5 and 10" =""  minlength="5" maxlength="10">
+</div>
+	<div>
+		<label>Birthday:</label>
+		<select>
+			<option>Month</option>
+			<option>January</option>
+			<option>Feburary</option>
+		</select>
+		<select>
+			<option>Day</option>
+			<option>1</option>
+			<option>2</option>
+		</select>
+		<select>
+			<option>Year</option>
+			<option>1994</option>
+			<option>1995</option>
+		</select>
+	</div>
+	<div>
+		<!-- I agree to the terms and conditions
+		<input type="checkbox" name=""> -->
+		<label for="terms">I agree to the terms and conditions:
+		</label>
+		<input id= "terms" type="checkbox" name="terms">
+	
+	</div>
+
+	<input type="submit" name="">
+</form>
+</head>
+<body>
+
+</body>
+</html>

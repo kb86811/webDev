@@ -1,0 +1,18 @@
+h1 {
+	/*Named Colors*/
+	/* color: purple; */
+	/* color:rgb(240, 100, 87); */
+	/* color:rgb(44, 202, 202); */
+	color:rgba(0, 200, 100, .2);
+
+}
+
+li {
+	/*HEXADECIMAL*/
+	color: #F400DD;
+}
+
+h4 {
+	/*RGB*/
+	color: rgb(20, 236, 153);
+}
