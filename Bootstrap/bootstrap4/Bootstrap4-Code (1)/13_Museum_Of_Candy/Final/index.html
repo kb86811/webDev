@@ -21,12 +21,15 @@
 
 <body>
     <!-- we give the color of navbar-dark since we want to the color of the text to be white 
-    the nav bar will expand when the scrren size is medium. py-0 will remove the padding of the nav bar from top and bottom. fixed-top will make the navabr fixed-->
+    the nav bar will expand when the scrren size is medium(navbar-expand-md). py-0 will remove the padding of the nav bar from top and bottom(same as (pt-0(set padding top to 0 ) and pb-0(set padding bottom 0)). fixed-top will make the navabr visble so when you scroll, it will be visible at the top no matter where you are on the page-->
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
         <a href="#" class="navbar-brand">CANDY</a>
             <!-- this is basically the drop down menu when the screen size changes to medium.
             navbar-toggler-icon --- is a class that will set the hamburguer icon for the drop down menu of the the nav bar
             arial-label is for the screen reader so they know what this button does -->
+            <!-- the data-target is the id of the the things it will collaspe 
+            when the screen size changes to medium -->
+            <!-- aria-label="Toggle navigation" added for screen reader to tell that this hamburger button toggles the navigation -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,11 +48,12 @@
             </ul>
         </div>
     </nav>
-
+                <!-- the padding of the container on the x axis are removed with  px-0-->
+                <!-- class names are seprated by space in the Section atg there are two classes applied to it -->
     <section class="container-fluid px-0">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <!-- this text will only be displyed when the text screen is large or up -->
+                <!-- this text will only be displyed when the screen size is large or up.  using the display utitlity (d-none, d-lg-block mt-5) the text only becomes visble when the tab size is large, if it is small or medim the text will disspear(d-none) -->
                 <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
                     <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
                     <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
@@ -114,13 +118,14 @@
                 <img src="imgs/gumball.png" alt="" class="img-fluid">
             </div>
         </div>
+        <!-- the order-2 is used to make it come second always, unless it tab size is medium then it will come firsts -->
         <div class="row align-items-center content">
             <div class="col-md-6 order-2 order-md-1">
                 <img src="imgs/sprinkles.png" alt="" class="img-fluid">
             </div>
             <div class="col-md-6 text-center order-1 order-md-2">
                 <div class="row justify-content-center">
-                    <!-- margin bottom at medium nd up is 0 -->
+                    <!-- when the tab size is samll or less there will be a margin of 5, so there is spaces between the text and the picture on a mobile device. when the screen size is medium and up the margins disspear, so the texts will be centered-->
                     <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                         <h2>MUSEUM OF CANDY</h2>
                         <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">

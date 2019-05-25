@@ -1,8 +1,13 @@
 var check;
-while(check !=="yes" || check !== "yeah"){
-    check=prompt("are we there yea? ");
+// while((check !="yes" ) || (check != "yeah")){
+    // the above logic was wrong it gave me hard time figuring it out 
+
+while(check !="yes" && check != "yeah"){ // as long as check is not yes or yeah keep asking
+     check=prompt("are we there yet? ");
 }
 alert("we are there now");
+
+
 
 for(var i=-10; i<20;i++ ){
     console.log(i);

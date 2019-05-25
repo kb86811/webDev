@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="descripton" content="Simple Calculator">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta author="Karen Tan">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+</body>
+	<div class="container">
+		<input type="text" id="dispaly" name="display" readonly="readonly"/>
+		<button class="graybuttons" type="button" id="mod" name="modular" onclick="show('%')">%</button>
+		<button class="graybuttons" type="button" name="clean" onclick="cls('')">C</button>
+		<button class="graybuttons" type="button" name="cleanOne" onclick="clsO()">&larr;</button>
+		<button class="graybuttons" type="button" name="division" onclick="show('/')">&divide;</button>
+		<button class="" type="button" name="7" onclick="show('7')">7</button>
+		<button class="" type="button" name="8" onclick="show('8')">8</button>
+		<button class="" type="button" name="9"onclick="show('9')">9</button>
+		<button class="graybuttons" type="button" name="multiplication" onclick="show('*')">&times;</button>
+		<button class="" type="button" name="4" onclick="show('4')">4</button>
+		<button class="" type="button" name="5" onclick="show('5')">5</button>
+		<button class="" type="button" name="6" onclick="show('6')">6</button>
+		<button class="graybuttons" type="button" name="substraction" onclick="show('-')">-</button>
+		<button class="" type="button" name="1" onclick="show('1')">1</button>
+		<button class="" type="button" name="2" onclick="show('2')">2</button>
+		<button class="" type="button" name="3" onclick="show('3')">3</button>
+		<button class="graybuttons" type="button" name="additon" onclick="show('+')">+</button>
+		<button class="graybuttons" type="button" name="plus-mius" onclick="sign(display.value)">&plusmn;</button>
+		<button class="" type="button" name="0" onclick="show('0')">0</button>
+		<button class="graybuttons" type="button" id="point" name="point" onclick="point()">.</button>
+		<button class="graybuttons" type="button" name="equal" onclick="calc()">=</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
