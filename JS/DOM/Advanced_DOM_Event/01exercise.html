@@ -19,7 +19,7 @@
     var tag=document.querySelector("body");
     var isPurple=false;
     button.addEventListener("click", function(){    
-        // this codes is my initial attempt, i tried to check if the background color the string puprle which is dumb since this color are hexadecimal value. not a string to bein with.
+        // this codes is my initial attempt, i tried to check if the background color the string puprle which is dumb since this color are hexadecimal value. not a string to begin with.
 
         // if( tag.style.background==="purple"){
         //     tag.style.background==="white";
@@ -47,8 +47,9 @@
         // else {
         //     document.body.style.background="purple";
         // }
-        //when it start the bodoy background is white hence is purple is false,
-        //so when we click it it will negate isPurple and becomes true. 
+        // isPurple=!isPurple  //if isPurple is true it will turn it to false and if it is false  it will turn it to true
+        //when it start the body background is white, hence, is purple is false,
+        //so when we click it, it will negate isPurple and becomes true. 
         //when we click it the second time, isPurple is true so it will turn the background 
         //to white and isPurple will be negated and becomes false. this keeps on going.....
         // isPurple=!isPurple; // negates it.
@@ -57,6 +58,7 @@
 
         //it will the class purle we made up in the head tag every time we clicked the button
         document.body.classList.toggle("purple");
+        // alert("cliked")
 
     })
 

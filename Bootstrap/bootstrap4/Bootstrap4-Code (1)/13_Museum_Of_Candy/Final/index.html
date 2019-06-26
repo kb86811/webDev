@@ -158,6 +158,8 @@
         $(function () {
             $(document).scroll(function () {
                 var $nav = $("#mainNavbar");
+                // set the scrolled css property once the nav bar is scrolled more than the height of the nav bar. 
+                // toggleClass scrollTop comes from jquery 
                 $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
             });
         });

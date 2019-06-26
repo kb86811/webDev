@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    < <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <script>
+            //my implementation not quite good
+            uniform();
+            function uniform() {
+                var array = [1, 1, 1, 4];
+                var index = 1;
+                while (array[0] === array[index]) {
+                    index++;
+                }
+                if (index === array.length) {
+                    console.log("unifrom")
+                }
+                else {
+                    console.log("not unifrom")
+
+                }
+            }
+            //checks if every element in the array are the same colts's impementation
+            function isUnifrom(arr){
+                var first=arr[0];
+                for(var i =1; i<arr.length;i++){
+                    if(arr[i]!==first){
+                        return false;
+                    }
+                }
+                return true;
+            }
+            function sumArray(arr){
+                var total=0;
+                arr.forEach(function(element){
+                    total+=element;
+                });
+                return total;
+            }
+            // max element in the array
+            function maxElement(arr){
+                var max=arr[0];
+                for(var i=1;i<arr.length;i++){
+                    if(max<arr[i]){
+                        max=arr[i];
+                    }
+                }
+                return max;
+            }
+            var arr=["red","green","blue"];
+            //forEach loop implmentation
+            // basically myforeach will acccept array and a function and for each element it will call the function.
+           
+            function myforeach(arr,func){
+                for(var i=0;i<arr.length;i++){
+                    func(arr[i]);
+                }
+            }
+            // here we are callingmyforeach function and we are passing the arr array and an anonymous function.
+            // so myforeach function will loop though the array and run the anonymous function foe each element
+            myforeach(arr,function(color){
+                console.log(color);
+            })
+        </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
