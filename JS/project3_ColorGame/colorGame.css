@@ -1,10 +1,12 @@
 body {
-	background-color: #232323;
+	/* why is the page background black  */
+	background-color: #232323; 
 	margin: 0;
 	font-family: "Montserrat", "Avenir";
 }
 
 .square {
+	/* why 30 percent width ? becuase each square takes 30 percent of the screen  */
 	width: 30%;
 	background: purple;
 	padding-bottom: 30%;
