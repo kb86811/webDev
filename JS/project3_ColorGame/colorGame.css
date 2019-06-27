@@ -13,7 +13,9 @@ body {
 	float: left;
 	margin: 1.66%;
 	border-radius: 15%;
+	/* this basically when we click on the squares it will take for the background color to fade out 0.6s */
 	transition: background 0.6s;
+	/* /the transition property does not work on all browser we need to add the two lines to work on every browser. webkit is a browser engine used by Safari and moz is for mozzilla browser */
 	-webkit-transition: background 0.6s;
 	-moz-transition: background 0.6s;
 }
@@ -31,11 +33,13 @@ h1 {
 	background: steelblue;
 	margin: 0;
 	text-transform: uppercase;
+	/* adds a padding on the top and bottom of 20px on the h1 and leaves the right and left to 0 */
 	padding: 20px 0;
 }
 
 #colorDisplay {
-	font-size: 200%;
+	/* 200 percent of the h1 font size */
+	font-size: 200%;  
 }
 
 #message {
@@ -54,8 +58,9 @@ h1 {
 	color: white;
 	background: steelblue;
 }
-
+/* like h1 or p refers to header1 and pragraph, here we are styling the button tags in the html  */
 button {
+	/* remvoes the border in the button  */
 	border: none;
 	background: none;
 	text-transform: uppercase;
@@ -64,9 +69,11 @@ button {
 	color: steelblue;
 	letter-spacing: 1px;
 	font-size: inherit;
+	/* this is used to chnage the color of the buttons to change very fast when we click on them */
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
+	/* remove the outline of the buttons that is set by default */
 	outline: none;
 }
 

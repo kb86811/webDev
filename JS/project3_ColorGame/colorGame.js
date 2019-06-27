@@ -12,19 +12,20 @@ var modeButtons = document.querySelectorAll(".mode");
 init();
 
 function init(){
-	setupModeButtons();
-	setupSquares();
+	setupModeButtons();  // adds an even listener for the mode buttons 
+	setupSquares(); // adds event listener for the squares
 	reset();
 }
 
 // this is used to set up the game for easy and hard mode, when the user selects the  in the game 
 function setupModeButtons(){
-	//when you click one the mode buttons, it will basically remove the slected css class from both, and adds selected class to the one selected
+	//when you click one the mode buttons, it will basically remove the slected css class from both(hard coding it a bit), and adds selected class to the one selected
 	for(var i = 0; i < modeButtons.length; i++){
 		modeButtons[i].addEventListener("click", function(){
 			modeButtons[0].classList.remove("selected");
 			modeButtons[1].classList.remove("selected");
 			this.classList.add("selected");
+			// here if the button's text content  that was clicked on is "Easy" then set numberSquares to 3
 			this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
 			reset();
 		});
@@ -36,7 +37,7 @@ function setupSquares(){
 // when the user clicks the squares the callback function will run. which bascially gets 
 // the background color of the clicked squares, compares it with the answer.
 	for(var i = 0; i < squares.length; i++){
-	//add click listeners to squares
+	//add click listeners to each of the squares
 		squares[i].addEventListener("click", function(){
 			//grab color of clicked square
 			var clickedColor = this.style.background;
@@ -67,6 +68,7 @@ function reset(){
 	messageDisplay.textContent = "";
 	//change colors of squares
 	for(var i = 0; i < squares.length; i++){
+		// here colors[i] returns the color if there is a color int he colors array if the colors[i] has passed the length of the array it will return "undefined" when we try to access it, which is trated in if else statement as false, so 
 		if(colors[i]){
 			squares[i].style.display = "block"
 			squares[i].style.background = colors[i];
